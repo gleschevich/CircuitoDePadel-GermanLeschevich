@@ -1,0 +1,314 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+/* BODY */
+body{
+    background-color: #5EE6EB;
+}
+/* ************CABECERA CON MENU E INICIO DE SESIÓN ************/
+.header__container{
+    background-color: #4D77FF;
+    width: 100%;
+    text-align: center;
+}
+.header__logo{
+   display: inline-block;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   margin: 20px 50px;
+}
+.header__logo img{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+.header__menu  {
+    display: inline-block;
+    
+}
+
+.header__menu ul{
+   
+    margin: 70px 50px 50px 70px;
+}
+
+.header__menu li{
+    display: inline-block;
+    padding:5px 10px;
+    background-color: white;
+    border:4px solid #000;
+    text-align:center;
+    color:white;
+    
+}
+.header__menu a{
+    text-decoration: solid;
+    color: #4D77FF;
+}
+.header__social-fb{
+    display: inline-block;
+}
+.header__social-fb i{
+    
+    width: 35px;
+    height: 35px;   
+}
+.header__social-ig{
+    display: inline-block;
+}
+.header__social-ig i{
+    
+    width: 35px;
+    height: 35px;
+    
+}
+.header__session-text{
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+.header__session-text a{
+    text-align: center;
+    color: #fff;
+    position:absolute;
+    top: 60px;
+    right: 90px;
+
+    }
+.header__session-icon{
+    position: absolute;
+    top:60px;
+    right:60px;
+}
+
+
+/**************** PIE DE PAGINA******* */
+.footer__container{
+    background-color: #4D77FF;
+    width: 100%;
+    clear: both;
+    text-align: center;
+ 
+}
+
+.footer__links ul{
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    list-style-type:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.footer__links ul li a{
+    
+        color:white
+    }
+
+
+/* **************PAGINA INDEX.HTML************* */
+.main__proxTorneos-text{
+    background-color: #4D77FF;
+    
+}
+.main__proxTorneos-text h2{
+    text-align: center;
+    margin: 30px 30px;
+    color: #fff    ;
+}
+.main__proxTorneos-img{
+    text-align: center;
+}
+.main__proxTorneos-img img{
+    
+    width: 500px;
+    height: 600px;
+}
+.main__gallery-text{
+    background-color: #4D77FF;
+
+}
+.main__gallery-text h2{
+    text-align: center;
+    margin: 50px 50px;
+    color: #fff;
+    
+}
+
+.main__gallery-img{
+    text-align: center;
+}
+.main__gallery-img img{
+    width: 700px;
+    height: 500px;
+}
+
+ 
+/********** PAGINA CLUBES.HTML******* */
+.section__clubes-container{
+    background-color: #4D77FF;
+}
+.section__clubes-draig{
+    /* display: inline-block; */
+    float: left;
+    width: 40%;
+   
+}
+.section__clubes-draig p{
+    color:  #0E185F;
+    text-align: center;
+    font-size: larger;
+    font: bold;
+}
+.section__clubes-draig iframe {
+    
+    width: 100%;
+    margin: 10px;
+  
+    
+}
+.section__clubes-aromos{
+    /* display: inline-block; */
+    float: right;
+    width: 40%;
+    
+}
+.section__clubes-aromos p{
+    color:  #0E185F;
+    text-align: center;
+    font-size: larger;
+    font: bold;
+}
+
+.section__clubes-aromos iframe {
+    width: 100%;
+    margin: 10px;
+    
+}
+    
+.section__clubes-madiba{
+    /* display: inline-block; */
+    float: right;
+    width: 40%;
+
+    
+}
+.section__clubes-madiba p{
+    color:  #0E185F;
+    text-align: center;
+    font-size: larger;
+    font: bold;
+}
+.section__clubes-madiba iframe {
+    width: 100%;
+    margin: 10px;
+    
+}
+.section__clubes-efecto{
+    /* display: inline-block; */
+    float: left;
+    width: 40%;
+  
+    
+}
+.section__clubes-efecto p{
+    color:  #0E185F;
+    text-align: center;
+    font-size: larger;
+    font: bold;
+}
+.section__clubes-efecto iframe {
+    width: 100%;
+    margin: 10px;
+
+}   
+   
+/* *******PAGINA CONTACTO.HTML **************/
+
+.contacto__form{
+    text-align: center;
+}.contacto__form legend{
+    color:  #0E185F;
+    text-align: center;
+    font-size: medium;
+    font: bold;
+}
+.contacto__form p{
+    color:  #0E185F;
+    text-align: center;
+    font-size: medium;
+    font: bold;
+}
+.contacto__form-button button{
+    color: white;
+    background-color: #0E185F;
+}
+.contacto__form textarea{
+    resize: none;
+}
+
+/* *************** PAGINA RANKING.HTML ***************************/
+
+.ranking__categoria{
+    background-color: #0E185F;
+    text-align: center;
+    margin: 30px;
+}
+.ranking__categoria p{
+    color: white;
+    font-size: larger;
+}
+.ranking__categoria ol{
+   color: white;
+   margin: 20px;
+   list-style-position: inside;
+   text-align: left;
+   display: inline-block;
+
+}
+.ranking__categoria li{
+    margin: 5px;
+}
+/* *************** PAGINA TORNEOS.HTML ***************************/
+.torneos__proxTorneos-img{
+    text-align: center;
+}
+.torneos__proxTorneos-img img{
+
+    width: 500px;
+    height: 600px;
+}
+.torneos__torneosPasados-img{
+    float: left;
+    margin-left: 200px;
+}
+.torneos__torneosPasados-img img{
+width: 500px;
+height: 600px;
+}
+.torneos__torneosPasados-resultados{
+    float: right;
+    width: 40%;
+    
+}
+.torneos__torneosPasados-resultados ul{
+    list-style-type: square;
+    line-height: 1.5;
+
+    
+}
+.torneos__torneosPasados-resultados ol li{
+    list-style-type:none;
+    margin-left: 30px;
+    color:#0E185F;
+    text-decoration: underline;
+}
+  
+
+ 
+

@@ -1,0 +1,536 @@
+/* ***********************RESET******************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se escrolea con sutileza */
+    scroll-behavior: smooth;
+  }
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+/* *********************** BODY ******************** */
+body{
+
+    background-image: linear-gradient(to bottom,#5EE6EB,#4D77FF );
+}
+/* *********************** HEADER ******************** */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 1rem 1rem;
+    background-color: #4D77FF;
+   
+}
+h2{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+    margin: 30px 30px;
+    color: #4D77FF;
+    animation-name: left-in;
+    animation-duration: 2s;
+
+}
+.header__logo{
+ 
+    height: 100px;
+    width: 200px;
+}
+.header__logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.header__social{
+   display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 0;
+    
+}
+
+.header__social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    color: #4D77FF;
+    border-radius: 50%;
+    background-color:white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+   
+}
+
+.header__burguerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in;
+  }
+
+  input#menu {
+    /* Para que no se vea el checkbox */
+    display: none;
+  }
+ 
+  /* ~ se usa para aplicar a los elementos hermanos de un contenedor  */
+
+/* Si esta checkeado pone display:block, originalmente esta con display none*/
+input#menu:checked ~ .header__menu {
+    display: block;
+  }  
+
+.header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    /* background-color: white; */
+}
+
+
+.header__menu ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   color:#4D77FF;
+   background-color: #4D77FF;
+   width: 100%;
+   height: 100%;
+    /* margin: 70px 50px 50px 70px; */
+    
+}
+
+.header__menu ul li {
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  .header__menu ul li a:hover {
+    /* background-color: rgb(250, 250, 250); */
+    color: black;
+    /* background-image: linear-gradient(to right, rgb(183, 183, 183), white); */
+  }
+
+
+  
+
+/******************************** Media queries *******************/
+@media screen and  (min-width: 768px) {
+    .header__burguerMenu {
+  
+      /* Oculta el boton del menu (Burguer menu) */
+      display: none;
+      
+    }
+   
+    header .header__menu {
+      display: flex;
+
+      position: inherit;
+      background-color: none;
+    }
+    .header__logo img{
+      width: 200px;
+      height: 100px;
+      border-radius: 20px;
+      
+  }
+    header .header__menu ul {
+      /* El flex lo hereda de la vista mobile */
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+    /* .header__menu ul{
+   
+      margin: 70px 50px 50px 70px;
+  } */
+  
+  .header__menu li{
+      display: flex;
+      padding:5px 10px;
+      background-color: white;
+      border:4px solid #000;
+      text-align:center;
+      color:white;
+      justify-content: space-between;
+      
+  }
+  .header__menu ul li:hover {
+    /* background-color: rgb(250, 250, 250); */
+    background-color: black;
+    
+    /* background-image: linear-gradient(to right, rgb(183, 183, 183), white); */
+  }
+  .header__menu ul li a:hover {
+    /* background-color: rgb(250, 250, 250); */
+  color:#4D77FF;
+    
+    /* background-image: linear-gradient(to right, rgb(183, 183, 183), white); */
+  }
+  .header__menu a{
+      text-decoration: solid;
+      color: #4D77FF;
+  }
+  .header__social{
+     margin: 20px 20px;
+     
+ }
+ 
+ 
+}
+
+/* *********************** INDEX ******************** */
+
+.main__container{
+    display:flex; 
+    flex-direction: column;
+    
+}
+
+.main__proxTorneos{
+    display: flex;
+    flex-direction: column;  
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.main__proxTorneos h2{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+      margin: 30px 30px;
+      color: #4D77FF   ;
+  }
+  .main__proxTorneos img{
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    object-fit: cover;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ****************************GALERIA******************* */
+  
+  .main__gallery{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas: 
+    "titulo titulo"
+    "img1 img1"
+    "img2 img3"
+    "img4 img5";
+  }
+ 
+  .main__gallery-titulo{
+    grid-area: titulo;
+    
+   }
+   .main__gallery-img1{
+    grid-area: img1;
+    
+   }
+   .main__gallery-img2{
+    grid-area: img2;
+   }
+   .main__gallery-img3{
+    grid-area: img3;
+   }
+   .main__gallery-img4{
+    grid-area: img4;
+   }
+   .main__gallery-img5{
+    grid-area: img5;
+   }
+   .main__container .main__gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* ****************************PIE DE PAGINA******************* */
+  
+ .footer__links{
+   display: flex;
+  justify-content: space-evenly;
+   width: 100%;
+  height: 100%;
+  background-color: #4D77FF;
+ }
+ .footer__links a{
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+ }
+/* ****************************TORNEOS******************* */
+.main__torneos-proxTorneos{
+  display: flex;
+  flex-direction: column;  
+    align-content: center;
+    justify-content: center;
+}
+.main__torneos-proxTorneos img{
+  
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__torneos-torneosPasados{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas: 
+  "pasado cat1"
+  "pasado cat2"
+  "pasado cat3"
+  "pasado cat4";
+}
+.main__torneos-torneosPasados .pasadoImg{
+  grid-area: pasado;
+  width: 90%;
+  height: 80%;
+ }
+ .main__torneos-torneosPasados .cat1{
+  grid-area: cat1;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+}
+  
+ 
+ .main__torneos-torneosPasados .cat2{
+  grid-area: cat2;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+ }
+ .main__torneos-torneosPasados .cat3{
+  grid-area: cat3;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+ }
+ .main__torneos-torneosPasados .cat4{
+  grid-area: cat4;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+ }
+ .main__torneos-torneosPasados ol li{
+  color:black;
+  text-shadow: 2px 2px 2px rgb(247, 247, 252);
+ }
+ /* ****************************RANKING******************* */
+ .ranking__categorias{
+  background-color: #0E185F;
+  text-align: center;
+  /* margin: 30px; */
+}
+.ranking__categorias p{
+  color: white;
+  font-size: larger;
+  text-shadow: 2px 2px 2px blue;
+
+}
+.ranking__categorias ol{
+ color: white;
+ margin: 20px;
+ list-style-position: inside;
+ text-align: left;
+ display: inline-block;
+}
+.ranking__categorias ol li{
+  list-style:decimal;
+  margin: 5px;
+ }
+
+/******************************** Media queries *******************/
+@media screen and  (min-width: 768px) {
+  .ranking__categorias{
+    display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas: 
+  "cat1 cat2"
+  "cat3 cat4"
+  ;
+}
+.ranking__categorias .ranking__cat1{
+  grid-area: cat1 ;
+}
+.ranking__categorias .ranking__cat2{
+  grid-area: cat2 ;
+}
+.ranking__categorias .ranking__cat3{
+  grid-area: cat3 ;
+}
+.ranking__categorias .ranking__cat4{
+  grid-area: cat4 ;
+}
+}
+
+/* ****************************CLUBES******************* */
+.section__clubes-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4D77FF;
+}
+.section__clubes-draig{
+  /* display: inline-block; */
+  
+  width: 40%;
+ 
+}
+.section__clubes-draig p{
+  color:  white;
+  text-align: center;
+  font-size: larger;
+  font: bold;
+}
+.section__clubes-draig iframe {
+  
+  width: 100%;
+
+  margin: 10px;
+
+  
+}
+.section__clubes-aromos{
+  /* display: inline-block; */
+ 
+  width: 40%;
+  
+}
+.section__clubes-aromos p{
+  color:  white;
+  text-align: center;
+  font-size: larger;
+  font: bold;
+}
+
+.section__clubes-aromos iframe {
+  width: 100%;
+  margin: 10px;
+  
+}
+  
+.section__clubes-madiba{
+  /* display: inline-block; */
+
+  width: 40%;
+
+  
+}
+.section__clubes-madiba p{
+  color:  white;
+  text-align: center;
+  font-size: larger;
+  font: bold;
+}
+.section__clubes-madiba iframe {
+  width: 100%;
+  margin: 10px;
+  
+}
+.section__clubes-efecto{
+  /* display: inline-block; */
+ 
+  width: 40%;
+
+  
+}
+.section__clubes-efecto p{
+  color:  white;
+  text-align: center;
+  font-size: larger;
+  font: bold;
+}
+.section__clubes-efecto iframe {
+  width: 100%;
+  margin: 10px;
+
+}   
+ 
+
+
+/******************************** Media queries *******************/
+@media screen and  (min-width: 768px) {
+  .section__clubes-container{
+    display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas: 
+  "draig aromos"
+  "madiba efecto"
+  ;
+    
+}
+.section__clubes-draig{
+  grid-area: draig;
+  width: 90%;
+}
+.section__clubes-aromos{
+  grid-area: aromos ;
+  width: 90%;
+}
+.section__clubes-madiba{
+  grid-area: madiba ;
+  width: 90%;
+
+}
+.section__clubes-efecto{
+  grid-area: efecto ;
+  width: 90%;
+
+}
+}
+
+/* *******PAGINA CONTACTO.HTML **************/
+
+.contacto__form{
+  text-align: center;
+}.contacto__form legend{
+  color:  #0E185F;
+  text-align: center;
+  font-size: medium;
+  font: bold;
+}
+.contacto__form p{
+  color:  #0E185F;
+  text-align: center;
+  font-size: medium;
+  font: bold;
+}
+.contacto__form-button button{
+  color: white;
+  background-color: #0E185F;
+}
+.contacto__form textarea{
+  resize: none;
+}
