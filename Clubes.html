@@ -4,102 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clubes</title>
-    <link rel="stylesheet" href="stylesheets/styleMobile.css">
+    <title>Inicio</title>
+    <!-- MI STYLESHEET -->
+    <link rel="stylesheet" href="stylesheets/style.css"> 
     <!-- FONT AWESOME -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Cabecera con logo y titulo -->
-    <header  id="top">
-       
-        <div class="header__logo">
-            <a href="Index.html"> <img src="img/logo.png" alt="logo-html"></a>
-        </div>
-        <!-- Redes sociales -->
-        <div class="header__social">
-            <a href="https://www.facebook.com/PADEL-2019-Circuito-de-Clubes-1782136478747685/" target="_blank">  <i class="fa-brands fa-facebook-square fa-xl"></i></a>
-            <a href="https://www.facebook.com/PADEL-2019-Circuito-de-Clubes-1782136478747685/" target="_blank">  <i class="fa-brands fa-instagram fa-xl"></i></a>
-        <!-- INICIO DE SESION -->
-     
-        <a href="inicioSesion.html"><i class="fa-solid fa-user fa-xl"></i></a>
-        </div>
+    <!-- HEADER -->
 
-        <!-- menu checkbox para mobile -->
-        <label for="menu" class="header__burguerMenu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        
-        <!-- Menu de navegacion -->
-        <nav class="header__menu" id="Menu">
-           
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Torneos.html">Torneos</a></li>
-                <li><a href="Ranking.html">Ranking</a></li>
-                <li><a href="Clubes.html">Clubes</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-       
-    
-    </header>
-    <main>
-        <div class="main__proxTorneos-text" id="proxTorneos">
-            <h2>CLUBES</h2>
-        </div>
-        <section class="section__clubes-container" id="clubes">
-         <div class="section__clubes-draig">
-            <p>
-                <span>DRAIG GOTCH</span>                
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11621.98832275188!2d-65.3030387!3d-43.261961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8d4d7cb94f073e!2sdraig%20goch!5e0!3m2!1ses!2sar!4v1647394592352!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="section__clubes-aromos">
-            <p>
-                <span>LOS AROMOS</span>
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.9618105418685!2d-65.31829978501527!3d-43.25222217913705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b92fc558c5%3A0x620dc2a2975b886!2sLos%20Aromos%20padel!5e0!3m2!1ses!2sar!4v1647394733105!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-            <div class="section__clubes-madiba">
-            <p>
-                <span>MADIBA</span>
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.313864996035!2d-65.10543198501286!3d-43.30768867913459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0156dd3477b21d%3A0xda733c65d5162674!2sComplejo%20Madiba%209104!5e0!3m2!1ses!2sar!4v1647394926935!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <nav  id="top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand px-2" href="index.html">
+                <img src="img/logo.png" alt="Logo-HTML" width="200" height="100" class="rounded-pill">
+            </a>
+            <!-- Redes sociales -->
+            <a class="navbar-brand px-5" href="https://www.facebook.com/PADEL-2019-Circuito-de-Clubes-1782136478747685/" target="_blank">  <i class="fa-brands fa-facebook-square fa-xl"></i></a>
+            <a class="navbar-brand px-5" href="https://www.facebook.com/PADEL-2019-Circuito-de-Clubes-1782136478747685/" target="_blank">  <i class="fa-brands fa-instagram fa-xl"></i></a>
+            <!-- BOTON BURGUERMENU -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu que se despliega cuando se clickea el BURGUERMENU  -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav gap-2">
+                  <li class="nav-item border border-1">
+                    <!-- Aria current indica que se está en la misma pagina -->
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item border border-1">
+                    <a class="nav-link active" href="Torneos.html">Torneos</a>
+                  </li>
+                  <li class="nav-item border border-1">
+                    <a class="nav-link active" href="Ranking.html">Rankings</a>
+                  </li>
+                  <li class="nav-item border border-1">
+                    <a class="nav-link active" href="Clubes.html">Clubes</a>
+                  </li>
+                  <li class="nav-item border border-1">
+                    <a class="nav-link active" href="Contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item border border-1">
+                    <a class="nav-link active" href="inicioSesion.html">Iniciar Sesion</a>
+                  </li>
+                </ul>
             </div>
-            <div class="section__clubes-efecto">
-            <p>
-                <span>EFECTO PADEL</span>
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5951135.624435065!2d-69.76836727500002!3d-43.25502769999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe015b33cfa75f05%3A0xb05b82ffc7cd4670!2sPadel%20Club!5e0!3m2!1ses!2sar!4v1647394858852!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>      
+      </nav>
+      <!-- FIN DEL HEADER -->
+    <main>
+      <div class="badge bg-primary text-wrap" style="width: 100%; margin-top: 50px;">
+            <h1>CLUBES</h1>
+        
+          <!-- GRID de dos columnas y 2 filas -->
+          <div class="container">
+            <!-- ROW DRAIG GOTCH -->
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-info mb-3" style="width: 18rem; margin-top: 30px;">
+                  <img src="img/logo-draig.png" class="card-img-top" style="width: 18rem;" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Contacto: 2804-437904</p>
+                  </div>
+                </div> 
+              </div>
+               <!-- UBICACION DRAIG GOTCH -->
+              <div class="col">
+                <div class="ratio ratio-16x9" style="width: 40rem;">
+                  <iframe style="margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11621.98832275188!2d-65.3030387!3d-43.261961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8d4d7cb94f073e!2sdraig%20goch!5e0!3m2!1ses!2sar!4v1647394592352!5m2!1ses!2sar"  alt="..."> </iframe> 
+                  <h5>Ubicación</h5>
+                </div>
+              </div>
+            </div>
+               <!-- ROW LOS AROMOS -->
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-info mb-3" style="width: 18rem;margin-top: 80px;">
+                  <img src="img/logo-aromos.jpeg" class="card-img-top" style="width: 18rem;" alt="...">
+                  <div class="card-body">
+                    <p class="card-text primary">Contacto: 2804-652670</p>
+                  </div>
+                </div> 
+              </div>
+              <!-- UBICACION LOS AROMOS -->
+              <div class="col">
+                <div class="ratio ratio-16x9" style="width: 40rem;">
+                  <iframe style="margin-top: 60px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.9618105418685!2d-65.31829978501527!3d-43.25222217913705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b92fc558c5%3A0x620dc2a2975b886!2sLos%20Aromos%20padel!5e0!3m2!1ses!2sar!4v1647394733105!5m2!1ses!2sar"  alt="..."> </iframe> 
+                  <h5 style="margin-top: 30px;">Ubicación</h5>
+                </div>
+              </div>
+            </div>
+               <!-- ROW MADIBA -->
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-info mb-3" style="width: 18rem;margin-top: 100px;">
+                  <img src="img/logo-madiba.jpeg" class="card-img-top" style="width: 18rem;" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Contacto: 2804-652670</p>
+                  </div>
+                </div> 
+              </div>
+              <!-- UBICACION MADIBA -->
+              <div class="col">
+                <div class="ratio ratio-16x9" style="width: 40rem;">
+                  <iframe style="margin-top: 100px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.313864996035!2d-65.10543198501286!3d-43.30768867913459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0156dd3477b21d%3A0xda733c65d5162674!2sComplejo%20Madiba%209104!5e0!3m2!1ses!2sar!4v1647394926935!5m2!1ses!2sar"  alt="..."> </iframe> 
+                  <h5 style="margin-top: 70px;">Ubicación</h5>
+                </div>
+              </div>
+            </div>
+               <!-- ROW EFECTO -->
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-info mb-3" style="width: 18rem;margin-top: 60px;">
+                  <img src="img/logo-efecto.jpeg" class="card-img-top" style="width: 18rem;" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Contacto: 2804-652670</p>
+                  </div>
+                </div> 
+              </div>
+              <!-- UBICACION EFECTO -->
+              <div class="col">
+                <div class="ratio ratio-16x9" style="width: 40rem;">
+                  <iframe style="margin-top: 60px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5951135.624435065!2d-69.76836727500002!3d-43.25502769999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe015b33cfa75f05%3A0xb05b82ffc7cd4670!2sPadel%20Club!5e0!3m2!1ses!2sar!4v1647394858852!5m2!1ses!2sar"  alt="..."> </iframe> 
+                  <h5 style="margin-top: 30px;">Ubicación</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </section>
-      
         </main>
      
     <!-- PIE DE PAGINA -->
-  <!-- Pie de Pagina -->
-   
-  <footer id="foot">
-    <div class="footer__links">
-        <ul>
-            <li> <a href="https://www.worldpadeltour.com/" target="_blank">World Padel Tour</a></li>
-            <li> <a href="http://ajpp.com.ar/" target="_blank">AJPP</a></li>
+    <div class="container-fluid ">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="https://www.worldpadeltour.com/" target="_blank" class="nav-link px-2 text-white">World Padel Tour</a></li>
+          <li class="nav-item"><a href="http://ajpp.com.ar/" target="_blank" class="nav-link px-2 text-white">AJPP</a></li>
+          <li class="nav-item"><a href="#top" class="nav-link px-2 text-warning text-decoration-underline fw-bold">IR ARRIBA</a></li>
         </ul>
-    <p> 
-            <a href="#top">Ir Arriba</a>
-    </p>
-        <p> 
-            <span>Todos los derechos reservados</span>
-        </p>
-    </div>  
-</footer>
+        <p class="text-center text-white">© 2022   German Leschevich, Inc - Circuito de Clubes de Padel Trelew</p>
+      </footer>
+    </div>
 
-    
-    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
