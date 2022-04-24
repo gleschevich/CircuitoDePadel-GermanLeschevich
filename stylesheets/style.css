@@ -3,7 +3,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-
+    /* Se escrolea con sutileza */
+    scroll-behavior: smooth;
 }
 /* BODY */
 body{

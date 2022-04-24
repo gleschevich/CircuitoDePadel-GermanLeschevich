@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contacto</title>
     <!-- MI STYLESHEET -->
     <link rel="stylesheet" href="stylesheets/style.css"> 
     <!-- FONT AWESOME -->
@@ -59,51 +59,46 @@
       <!-- FIN DEL HEADER -->
 
     <main>
-        <div class="main__proxTorneos-text" id="proxTorneos">
-         <h2 class="animate__animated animate__backInLeft">CONTACTÁNOS</h2>
+        <div class="badge bg-primary text-wrap" style="width: 100%; margin-top: 50px;">
+            <h1>CONTACTÁNOS</h1>
         </div>
-        <form action="msj-enviado.html" method="post" enctype="" class="contacto__form">
-            <fieldset>
-                <legend>Llene sus datos y envie su mensaje</legend>
-                
-                <!-- Ingresar los datos -->
-                <p>
-                    <label for="nombre">Nombre *</label>
-                </p>
-                <input type="text" name="userName" id="nombre"  required>
-                
-                <p>
-                    <label for="apellido">Apellido *</label>
-                </p>
-                <input type="text" name="userSurname" id="apellido"  required>
-                
-                <p>
-                    <label for="edad">Edad</label>
-                </p>
-                <input type="number" name="age" id="edad" >
+       
+        <div class="container py-4">
 
-                <p>
-                    <label for="tel">Teléfono</label>
-                </p>
-                <input type="tel" name="phone" id="tel" >
-                <p>    
-                    <label for="email">Email *</label>
-                </p>
-                <input type="email" name="email" id="email"  required>
+            <!-- Bootstrap 5 starter form -->
+            <form action="msj-enviado.html" id="contactForm">
+        
+            <!-- Name input -->
+            <div class="mb-3">
+                <label class="form-label" for="name"></label>
+                <input class="form-control" id="name" type="text" placeholder="Nombre" />
+            </div>
 
-                <!-- Ingresar el mensaje -->
-                <p>    
-                    <label for="mensaje">Mensaje:</label>
-                </p>
-                <textarea name="message" id="mensaje"  cols="30" rows="10"></textarea>
-                <div class="contacto__form-button">
-                    <button type="reset">Borrar</button>
-                    <button type="submit">Enviar</button>
-                </div>
-
-            </fieldset>
-
-        </form>
+            <div class="mb-3">
+                <label class="form-label" for="surname"></label>
+                <input class="form-control" id="surname" type="text" placeholder="Apellido" />
+            </div>
+        
+            <!-- Email address input -->
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress"></label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="E-mail" />
+            </div>
+        
+            <!-- Message input -->
+            <div class="mb-3">
+                <label class="form-label" for="message"></label>
+                <textarea class="form-control" id="message" type="text" placeholder="Mensaje" style="height: 10rem;"></textarea>
+            </div>
+        
+            <!-- Form submit button -->
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+            </div>
+        
+            </form>
+  
+  </div>
     </main>
 
 
