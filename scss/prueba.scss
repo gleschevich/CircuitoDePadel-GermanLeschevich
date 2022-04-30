@@ -12,14 +12,27 @@
     /* Se escrolea con sutileza */
     scroll-behavior: smooth;
 }
+$paletaColores:(//declaracion de MAP para paleta de colores
+    fondo_degrade:linear-gradient(to bottom,#5EE6EB,#4D77FF),
+    azul_standart:#4D77FF,
+    aqua_standart:#5EE6EB,
+    texto_standar: white
 
-$fondo_degrade:linear-gradient(to bottom,#5EE6EB,#4D77FF );
-$azul_standart:#4D77FF;
-$aqua_standart:#5EE6EB;
-
+);
 
 
 /* BODY */
 body{
-    background-image: $fondo_degrade;
+    background-image: map-get($paletaColores,fondo_degrade);
+}
+
+//Permite definir ancho y margen top de un titulo
+@mixin tamañoTitulo ($ancho, $margen) {
+    width: $ancho;
+    margin-top: $margen;
+    
+}
+.badge{
+    @include tamañoTitulo(100%, 50px );
+ 
 }
