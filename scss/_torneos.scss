@@ -1,6 +1,12 @@
 /*TORNEOS.HTML STYLES*/
-.p-3 p{
+
+//Usa el mismo margen que la imagen del costado
+.p-3 {
+    @extend .pasadoImg;
+    p{
     text-align: center;
+    margin-top: 0px;
+}
 }
 .list-group{
     text-align: center;
@@ -8,5 +14,7 @@
         text-decoration: solid;
     }
 }
-
+.pasadoImg{
+    margin-top: 3rem;
+}
 
