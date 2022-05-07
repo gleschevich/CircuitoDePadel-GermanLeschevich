@@ -2,11 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesion</title>
+    
+    <!-- SEO -->
+    <meta name="description=" content="Pagina Oficial del Circuito de Clubes de Padel
+    de Trelew. Donde se puede ver los torneos pasados, siguientes e inscribirse. Consultar el 
+    ranking y contactarse con los administradores del Circuito">
+    <meta name="keyword" content="Padel, paddle, Trelew, Circuito, Ranking, Torneos">
+    <title>Iniciar Sesión</title>
+    
     <!-- MI STYLESHEET -->
-    <link rel="stylesheet" href="stylesheets/style.css"> 
+    <link rel="stylesheet" href="css/pruebacss.css"> 
     <!-- FONT AWESOME -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Animate css -->
@@ -61,9 +69,28 @@
        
       <div class="badge bg-primary text-wrap" >
         <h1>INICIAR SESIÓN</h1>
-            <img src="img/EnConstruccion.webp" alt="">
       </div>
+      <div class="container col-xl-4">
+
+        <!-- FORMULARIO DE INICIO SESION -->
+        <form  id="loginForm">
+    
+        <!-- DNI-->
+        <div class="mb-3">
+            <label class="form-label" for="DNI"></label>
+            <input class="form-control" id="DNI" type="number" placeholder="DNI" />
+        </div>
+        <!--  PASSWORD -->
+        <div class="mb-3">
+            <label class="form-label" for="password"></label>
+            <input class="form-control" id="password" type="password" placeholder="Contraseña" />
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        <button class="btn btn-primary" type="submit">Registrarse</button>
+      </form>
+    </div>
     </main>
+
   <!-- PIE DE PAGINA -->
   <div class="container-fluid ">
     <footer class="py-3 my-4">
