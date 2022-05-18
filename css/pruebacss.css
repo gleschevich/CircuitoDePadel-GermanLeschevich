@@ -28,6 +28,31 @@ div.col-xl-4 iframe {
   height: 20rem;
   margin-top: 20px; }
 
+/* ****************************Principal******************* */
+.main__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "prox_torneos" "news1" "news2"; }
+
+.main__gallery-prox_torneos {
+  grid-area: prox_torneos;
+  margin: 30px; }
+
+.main__gallery-news1 {
+  grid-area: news1;
+  margin: 30px; }
+
+.main__gallery-news2 {
+  grid-area: news2;
+  margin: 30px; }
+
+/******************************** Media queries ****************** */
+@media screen and (min-width: 768px) {
+  .main__gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-areas: "prox_torneos news1" "prox_torneos news2"; } }
+
 /* RESET */
 * {
   margin: 0;
@@ -40,6 +65,24 @@ div.col-xl-4 iframe {
 body {
   background-image: linear-gradient(to bottom, #5EE6EB, #4D77FF); }
 
+li a {
+  box-shadow: 0 0 5px black; }
+
 .badge {
   width: 100%;
   margin-top: 50px; }
+
+.nav__titulo {
+  visibility: hidden; }
+
+/******************************** Media queries ****************** */
+@media screen and (min-width: 768px) {
+  .nav__titulo {
+    visibility: visible;
+    animation: backInRight;
+    animation-duration: 4s;
+    color: white;
+    text-decoration: solid;
+    text-shadow: 0 0 5px black;
+    margin-left: 20px;
+    font-size: larger; } }
