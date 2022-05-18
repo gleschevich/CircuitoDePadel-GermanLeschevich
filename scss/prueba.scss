@@ -25,6 +25,9 @@ $paletaColores:(//declaracion de MAP para paleta de colores
 body{
     background-image: map-get($paletaColores,fondo_degrade);
 }
+li a{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
 
 //Permite definir ancho y margen top de un titulo
 @mixin tamañoTitulo ($ancho, $margen) {
@@ -34,6 +37,24 @@ body{
 }
 .badge{
     @include tamañoTitulo(100%, 50px );
-    
- 
+}
+
+.nav__titulo{
+    visibility: hidden;
+}
+
+/******************************** Media queries ****************** */
+@media screen and  (min-width: 768px) {
+    .nav__titulo{
+        visibility: visible;
+        animation: backInRight;
+        animation-duration: 4s;
+        color: white;
+        text-decoration: solid;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        margin-left: 20px;
+        font-size: larger;
+       
+    }
+
 }
